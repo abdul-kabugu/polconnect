@@ -10,7 +10,7 @@ PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 
 ![Static Badge](https://img.shields.io/badge/typescript-fushia)
 
-![Static Badge](https://img.shields.io/badge/npm-red)
+[Static Badge](https://img.shields.io/badge/npm-red)
 
 
 
@@ -24,11 +24,11 @@ PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 
 ## Installation
 
-Install my-project with npm
+Install  with npm
 ```bash
   npm install polconnect
 ```
- or Install my-project with yarn
+ or Install  with yarn
 ```bash
   yarn add  polconnect
 ```
