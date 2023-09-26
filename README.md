@@ -4,13 +4,9 @@
 PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 
 
-![Static Badge](https://img.shields.io/badge/polkadot-blue) 
+| ![Static Badge](https://img.shields.io/badge/polkadot-blue) | ![Static Badge](https://img.shields.io/badge/substrate-red) | ![Static Badge](https://img.shields.io/badge/typescript-fuchsia) | ![Static Badge](https://img.shields.io/badge/npm-red) |
+| --- | --- | --- | --- |
 
-![Static Badge](https://img.shields.io/badge/substrate-red)
-
-![Static Badge](https://img.shields.io/badge/typescript-fushia)
-
-[Static Badge](https://img.shields.io/badge/npm-red)
 
 
 
