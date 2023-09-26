@@ -61,9 +61,11 @@ For full Documentation  visit   kabugu.polconnect.xyz
 
 
 
+## 🔗 Author Links
 
-# Created By
-![Static Badge](https://img.shields.io/badge/abdul%20kabugu-lighblue?link=https%3A%2F%2Ftwitter.com%2FKabuguAbdul)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/KabuguAbdul)
+
+
 
 
 
