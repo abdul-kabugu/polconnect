@@ -34,13 +34,13 @@ Install  with npm
 ```javascript
 // nextjs example
 
-import {PolconnectProvider, astar} from 'polconnect'
+import {PolkitProvider, astar} from 'polconnect'
 
 function App({ Component, pageProps }: AppProps) {
   return(
-      <PolconnectProvider theme='dark' defaultChain={astar} appName='testing'>
+      <PolkitProvider theme='dark' defaultChain={astar} appName='testing'>
        <Component {...pageProps} />
-</PolconnectProvider>     
+</PolkitProvider>     
   ) 
 }
 
