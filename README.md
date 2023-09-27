@@ -4,13 +4,9 @@
 PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 
 
-![Static Badge](https://img.shields.io/badge/polkadot-blue) 
+| ![Static Badge](https://img.shields.io/badge/polkadot-blue) | ![Static Badge](https://img.shields.io/badge/substrate-red) | ![Static Badge](https://img.shields.io/badge/typescript-fuchsia) | ![Static Badge](https://img.shields.io/badge/npm-red) |
+| --- | --- | --- | --- |
 
-![Static Badge](https://img.shields.io/badge/substrate-red)
-
-![Static Badge](https://img.shields.io/badge/typescript-fushia)
-
-![Static Badge](https://img.shields.io/badge/npm-red)
 
 
 
@@ -24,11 +20,11 @@ PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 
 ## Installation
 
-Install my-project with npm
+Install  with npm
 ```bash
   npm install polconnect
 ```
- or Install my-project with yarn
+ or Install  with yarn
 ```bash
   yarn add  polconnect
 ```
@@ -38,13 +34,13 @@ Install my-project with npm
 ```javascript
 // nextjs example
 
-import {PolconnectProvider, astar} from 'polconnect'
+import {PolkitProvider, astar} from 'polconnect'
 
 function App({ Component, pageProps }: AppProps) {
   return(
-      <PolconnectProvider theme='dark' defaultChain={astar} appName='testing'>
+      <PolkitProvider theme='dark' defaultChain={astar} appName='testing'>
        <Component {...pageProps} />
-</PolconnectProvider>     
+</PolkitProvider>     
   ) 
 }
 
@@ -61,13 +57,15 @@ export default function Home() {
 
 ## Documentation
 
-For full Documentation  visit   kabugu.polconnect.xyz
+For full Documentation  Visit  [kabugu.polconnect.xyz](kabugu.polconnect.xyz/)
 
 
 
 
-# Created By
-![Static Badge](https://img.shields.io/badge/abdul%20kabugu-lighblue?link=https%3A%2F%2Ftwitter.com%2FKabuguAbdul)
+## 🔗 Author Links
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/KabuguAbdul)
+
 
 
 
