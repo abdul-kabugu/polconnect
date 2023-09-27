@@ -57,7 +57,7 @@ export default function Home() {
 
 ## Documentation
 
-For full Documentation  visit   kabugu.polconnect.xyz
+For full Documentation  Visit  [kabugu.polconnect.xyz](kabugu.polconnect.xyz/)
 
 
 
