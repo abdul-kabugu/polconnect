@@ -13,11 +13,17 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+       colors : {
+         polkadotmain : "#c82679"
+       },
       animation: {
         scaleSlow : 'scaleSlow 3.2s ease-in-out',
         shakeAndMove : 'shakeAndMove 4.2s ease-in-out',
         slideAndFade : "slideAndFade 2s ease-in-out",
-        fromDownFade : "fromDownFade 1s ease-inout"
+        fromDownFade : "fromDownFade 1s ease-inout",
+        cardAnimation : "cardAnimation 5s ease-in-out",
+        xcardAnimation : "xcardAnimation 10s ease-in-out",
+      cardsContainerAnimation: "cardsContainerAnimation 3s ease-in-out"
         },
         keyframes: {
           scaleSlow : {
@@ -64,8 +70,66 @@ const config: Config = {
             }
           },
 
+          cardAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              zIndex: '10',
+            },
+            '40%': {
+              transform: 'translateY(-40%)',
+              zIndex: '10',
+            },
+            '50%': {
+              transform: 'translateY(-40%)',
+              zIndex: '20',
+            },
+            '100%': {
+              transform: 'translateY(0%)',
+              zIndex: '20',
+            },
+          },
+            xcardAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              zIndex: '10',
+            },
+            '40%': {
+              transform: 'translateX(-50%)',
+              zIndex: '10',
+            },
+            '50%': {
+              transform: 'translateX(-50%)',
+              zIndex: '20',
+            },
+            '100%': {
+              transform: 'translateX(0%)',
+              zIndex: '20',
+            },
+          },
+             cardsContainerAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              zIndex: '-1',
+              
+            },
+            '40%': {
+              transform: 'translateY(-10%)',
+              zIndex: '-1',
+            },
+            '50%': {
+              transform: 'translateY(-10%)',
+              zIndex: '-1',
+            },
+            '100%': {
+              transform: 'translateY(0%)',
+              zIndex: '-1',
+            },
+          },
+
         }, 
-       
+       screens :{
+        xs : "250px"
+       }
     },
   },
   plugins: [],

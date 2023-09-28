@@ -14,7 +14,10 @@ module.exports = {
         scaleSlow : 'scaleSlow 3.2s ease-in-out',
         shakeAndMove : 'shakeAndMove 4.2s ease-in-out',
         slideAndFade : "slideAndFade 2s ease-in-out",
-        fromDownFade : "fromDownFade 1s ease-inout"
+        fromDownFade : "fromDownFade 1s ease-inout",
+        cardAnimation : "cardAnimation 5s ease-in-out",
+        xcardAnimation : "xcardAnimation 10s ease-in-out",
+      cardsContainerAnimation: "cardsContainerAnimation 3s ease-in-out"
         },
         keyframes: {
           scaleSlow : {
@@ -59,6 +62,62 @@ module.exports = {
               transform: 'translateY(0)',
               opacity: '1'
             }
+          },
+
+          cardAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              zIndex: '10',
+            },
+            '40%': {
+              transform: 'translateY(-40%)',
+              zIndex: '10',
+            },
+            '50%': {
+              transform: 'translateY(-40%)',
+              zIndex: '20',
+            },
+            '100%': {
+              transform: 'translateY(0%)',
+              zIndex: '20',
+            },
+          },
+            xcardAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              zIndex: '10',
+            },
+            '40%': {
+              transform: 'translateX(-50%)',
+              zIndex: '10',
+            },
+            '50%': {
+              transform: 'translateX(-50%)',
+              zIndex: '20',
+            },
+            '100%': {
+              transform: 'translateX(0%)',
+              zIndex: '20',
+            },
+          },
+             cardsContainerAnimation: {
+            '0%': {
+              transform: 'translateY(0%)',
+              //zIndex: '10',
+              
+            },
+            '40%': {
+              transform: 'translateY(-10%)',
+              //zIndex: '10',
+            },
+            '50%': {
+              transform: 'translateY(-10%)',
+              zIndex: '0',
+            },
+            '100%': {
+              transform: 'translateY(0%)',
+              //zIndex: '20',
+            },
           },
 
         },
