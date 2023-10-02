@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import TopNav from '@/components/TopNav'
 import OnboardingSteps from '@/components/OnboardingSteps'
 import {Parallax, useParallax} from 'react-scroll-parallax'
+import SlidingElements from '@/components/SlideElements'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,10 +15,9 @@ export default function Home() {
     >
        <TopNav      />
        <div className='max-w-screen-xl mx-auto -z-10 '  >
-       
      <Hero  />
      <OnboardingSteps  />
-    
+
      </div>
     </main>
   )
