@@ -5,11 +5,19 @@ import TopNav from '@/components/TopNav'
 import OnboardingSteps from '@/components/OnboardingSteps'
 import {Parallax, useParallax} from 'react-scroll-parallax'
 import SlidingElements from '@/components/SlideElements'
+import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   
   return (
+    <>
+     <Head>
+        <title>Polconnect Kit</title>
+        <meta name="description" content="PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <main
       className={` min-h-screen  ${inter.className}`}
     >
@@ -20,5 +28,6 @@ export default function Home() {
 
      </div>
     </main>
+    </>
   )
 }

@@ -13,13 +13,11 @@ export default function OnboardingSteps() {
   <div className='xs:hidden md:flex flex-col '>
   
       <div className='' ref={parallax.ref}>
-        <h1 className={`${publicSans.className} text-3xl font-semibold my-6 text-center`}> Seamless Onboarding Experience</h1>
+        <h1 className={`${publicSans.className} text-4xl font-semibold my-10  text-center`}> Seamless Onboarding Experience</h1>
          <SlidingElements  />
         </div>
       
-      <Parallax speed={5}>
-        <h2>This is my heading</h2>
-      </Parallax>
+    
   </div>
   )
 }
