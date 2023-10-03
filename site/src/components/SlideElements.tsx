@@ -1,5 +1,6 @@
 // src/SlidingElements.js
 import React from 'react';
+//@ts-ignore
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
