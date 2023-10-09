@@ -17,6 +17,23 @@ PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻
 - 👌🏻 Cross Chain Support
 - 🦄 Supports All wallets
 
+  ## Motivition
+
+
+In the Polkadot ecosystem, you can utilize the web3Enable function to access all injected extensions in a user's browser and the web3Accounts() method to retrieve user addresses. 
+
+While this approach may seem functional, it comes with its own set of challenges. Imagine a scenario where a user has multiple Polkadot-wallets extensions installed in their browser. When web3Enable() is initialized, all these installed wallets pop up, significantly disrupting the user interface and leading to a less-than-optimal user experience.
+
+Take a look at the image below, 
+
+
+![polkadot Image](https://i.ibb.co/MnZT9bQ/photo-2023-10-09-12-25-29.jpg)
+
+
+Not only does this lead to a compromised user experience, but it also places a burden on developers who need to write extensive code to manage these wallet interactions.
+
+Enter Polconnect, your solution to these challenges. With Polconnect, all it takes is a single line of code. Users can easily select their preferred wallets, manage chains, and seamlessly connect to retrieve user addresses,
+
 
 ## Installation
 
