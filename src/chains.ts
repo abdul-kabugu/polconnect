@@ -120,11 +120,78 @@ export interface SubstrateChain {
     faucetUrls: [],
     logo : "https://i.ibb.co/dL7WQq6/astar-net.png"
   }
+
+  export const Unique: SubstrateChain = {
+    network: 'Unique',
+    name: 'Unique',
+    ss58Prefix: 7391,
+    rpcUrls: ['wss://ws.unique.network'],
+    explorerUrls: {
+      [SubstrateExplorer.Subscan]: `https://astar.subscan.io`,
+    },
+    faucetUrls: [],
+    logo : "https://ipfs.unique.network/ipfs/QmbJ7CGZ2GxWMp7s6jy71UGzRsMe4w3KANKXDAExYWdaFR"
+  }
+
+  export const Quartz: SubstrateChain = {
+    network: 'Quartz',
+    name: 'Quartz',
+    ss58Prefix: 255,
+    rpcUrls: ['wss://ws-quartz.unique.network'],
+    explorerUrls: {
+      [SubstrateExplorer.Subscan]: `https://astar.subscan.io`,
+    },
+    faucetUrls: [],
+    logo : "https://ipfs.unique.network/ipfs/QmaGPdccULQEFcCGxzstnmE8THfac2kSiGwvWRAiaRq4dp"
+  }
+  
+  
+  export const SubSocial: SubstrateChain = {
+    network: 'Subsocial',
+    name: 'Subsocial',
+    ss58Prefix: 255,
+    rpcUrls: ['wss://para.f3joule.space'],
+    explorerUrls: {
+      [SubstrateExplorer.Subscan]: `https://astar.subscan.io`,
+    },
+    faucetUrls: [],
+    logo : "https://i.ibb.co/86htKn7/subsocial.jpg"
+  }
+
+  export const Moonbeam: SubstrateChain = {
+    network: 'Moonbeam',
+    name: 'Moonbeam',
+    ss58Prefix: 255,
+    rpcUrls: ['wss://moonbeam.public.blastapi.io'],
+    explorerUrls: {
+      [SubstrateExplorer.Subscan]: `https://astar.subscan.io`,
+    },
+    faucetUrls: [],
+    logo : "https://i.ibb.co/1RtWYCD/moonbeam-logo.png"
+  }
+
+    export const Acala: SubstrateChain = {
+    network: 'Acala',
+    name: 'Acala',
+    ss58Prefix: 255,
+    rpcUrls: ['wss://eth-rpc-karura.aca-api.network/ws'],
+    explorerUrls: {
+      [SubstrateExplorer.Subscan]: `https://astar.subscan.io`,
+    },
+    faucetUrls: [],
+    logo : "https://i.ibb.co/1RtWYCD/moonbeam-logo.png"
+  }
+  
+  
+  
   
   /**
    * Exporting all chains separately
    */
   export const allSubstrateChains: SubstrateChain[] = [
+    SubSocial,
+    Quartz,
+    Unique,
     development,
     alephzeroTestnet,
     rococo,
@@ -135,9 +202,14 @@ export interface SubstrateChain {
   ]
   
     export const allDefaultChains : SubstrateChain[] = [
+       alephzero,
+       Unique,
+      Moonbeam,
+      SubSocial,
+      Quartz,
+      shiden,
       shibuya,
       alephzeroTestnet,
-      shiden,
       rococo,
       development
 

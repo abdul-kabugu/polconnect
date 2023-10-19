@@ -76,7 +76,7 @@ const walletConnector = (chain: any, wallet : any) =>  {
      return(
       <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
    
-  <div className={`w-[310px] animate-fromDownFade duration-500 h-[420px] border   ${themeConfig === "dark" ? "border-gray-700/70 bg-gray-900 text-gray-300/75"  : "border-black/30 bg-white/90"} rounded-xl p-3`}>
+  <div className={`w-[310px] animate-fromDownFade duration-500 h-[420px] border   ${themeConfig === "dark" ? "border-gray-700/70 bg-gray-900 text-gray-300/75"  : "border-black/30 bg-white/90"} rounded-xl p-3 z-20`}>
      {/*Start component  header */}
 
        <div className="flex justify-between items-center "> 
@@ -119,7 +119,7 @@ const walletConnector = (chain: any, wallet : any) =>  {
     return(
       <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
 
-      <div className={`w-[280px] h-[425px] border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900  text-gray-300" : "bg-white/90 border-gray-600/30"}  rounded-xl p-4  animate-slideAndFade`}>
+      <div className={`w-[280px] h-[425px] border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900  text-gray-300" : "bg-white/90 border-gray-600/30"}  rounded-xl p-4  animate-slideAndFade z-20`}>
         {/*} Start component  header */}
     
            <div className="flex justify-between items-center "> 
@@ -168,7 +168,7 @@ const walletConnector = (chain: any, wallet : any) =>  {
     return(
       <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
 
-      <div className={`w-[280px] h-[406px] border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900  text-gray-300" : "bg-white/90 border-gray-600/30"}  rounded-xl p-4  animate-slideAndFade`}>
+      <div className={`w-[280px] h-[406px] border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900  text-gray-300" : "bg-white/90 border-gray-600/30"}  rounded-xl p-4  animate-slideAndFade z-20`}>
         {/*} Start component  header */}
     
            <div className="flex justify-between items-center "> 
@@ -215,7 +215,7 @@ const walletConnector = (chain: any, wallet : any) =>  {
    } else if(modalState === "isConnecting" && ! isWalletInstalled(selectedWallet)){
     return(
     <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/70  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
-<div className={`w-[320px] animate-slideAndFade h-[370px] ${themeConfig === "dark" ? "bg-gray-900 border-gray-300/30 text-gray-300" : "border-gray-600/30  bg-white/90"} border  rounded-xl p-4 `}>
+<div className={`w-[320px] animate-slideAndFade h-[370px] ${themeConfig === "dark" ? "bg-gray-900 border-gray-300/30 text-gray-300" : "border-gray-600/30  bg-white/90"} border  rounded-xl p-4 z-20`}>
     {/*} Start component  header */}
 
        <div className="flex justify-between items-center "> 
@@ -264,7 +264,7 @@ install the browser extension.</p>
    }else if(modalState === "isConnecting" && isConnecting && isWalletInstalled(selectedWallet)) {
       return(
          <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/70  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
-<div className={`w-[320px] animate-slideAndFade h-[340px] ${themeConfig === "dark" ? "bg-gray-900 border-gray-300/30 text-gray-300" : "border-gray-600/30  bg-white/90"} border  rounded-xl p-4 `}>
+<div className={`w-[320px] animate-slideAndFade h-[340px] ${themeConfig === "dark" ? "bg-gray-900 border-gray-300/30 text-gray-300" : "border-gray-600/30  bg-white/90"} border  rounded-xl p-4 z-20 `}>
     {/*} Start component  header */}
 
        <div className="flex justify-between items-center "> 

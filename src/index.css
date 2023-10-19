@@ -5,3 +5,22 @@
 .infinityAnimation {
     animation-iteration-count: infinite;
   }
+  /* For WebKit-based browsers like Safari */
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 1px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* For Firefox and non-WebKit browsers */
+.scrollbar-hidden {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+
+
+
+

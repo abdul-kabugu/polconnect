@@ -6,9 +6,11 @@ import OnboardingSteps from '@/components/OnboardingSteps'
 import {Parallax, useParallax} from 'react-scroll-parallax'
 import SlidingElements from '@/components/SlideElements'
 import Head from 'next/head'
+import ogImgUrl from '../../public/img/screenshot.png'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  
   
   return (
     <>
@@ -17,6 +19,9 @@ export default function Home() {
         <meta name="description" content="PolconnectKit - Your Seamless Polkadot Wallet Connector 👩🏻‍💻" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+       {/* @ts-ignore       */}
+<meta property="og:image" content={ogImgUrl} key="ogimage" />
+
       </Head>
     <main
       className={` min-h-screen  ${inter.className}`}

@@ -31,7 +31,7 @@ export default function DisconnectModal({userAddress, balance} : disconnectModal
       }
   return (
     <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
-          <div className={`h-[280px] w-[320px] rounded-xl border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900 text-gray-300" : "border-gray-600/30 bg-white/90"}  p-4 animate-slideAndFade`}>
+          <div className={`h-[280px] w-[320px] rounded-xl border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900 text-gray-300" : "border-gray-600/30 bg-white/90"}  p-4 animate-slideAndFade z-20`}>
          {/*} Start component  header */}
 
         <div className="flex items-center justify-end">

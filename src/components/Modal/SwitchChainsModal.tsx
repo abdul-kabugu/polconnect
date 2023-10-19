@@ -14,10 +14,10 @@ export default function SwitchChainsModal() {
     
   return (
     <div className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50  ${themeConfig === "light" ? "shadow-xl" : "shadow-xl"}`} onClick={handleOverlayClick}>
-    <div className={`h-[370px] animate-slideAndFade w-[300px] rounded-xl border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900 text-gray-300" : "border-gray-600/30 bg-white/90"} p-4`}>
+    <div className={`h-[370px] animate-slideAndFade w-[300px] rounded-xl border ${themeConfig === "dark" ? "border-gray-600/30 bg-gray-900 text-gray-300" : "border-gray-600/30 bg-white/90"} p-4 overflow-y-scroll scrollbar-hidden z-20`}>
         
 
-        <div className={`flex items-center justify-between`}>
+        <div className={`flex items-center justify-between sticky top-0 bg-inherit`}>
            <h1 className="text-lg font-semibold"> Switch Networks </h1>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="h-6 w-6 cursor-pointer " onClick={handleSwitchChains}>
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
