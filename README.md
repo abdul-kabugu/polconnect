@@ -53,6 +53,14 @@ Install  with npm
 ```javascript
 // nextjs example
 
+// Wrap your entire application in PolkitProvider  the  provider  takes 3  props
+
+// them :  dark or light theme
+// defaultChain : the default chain you want conect to   you can get supported  chans from polconnect
+// appName : the name of your  application
+
+ 
+// import  PolkitProvider and astar network from polconnect
 import {PolkitProvider, astar} from 'polconnect'
 
 function App({ Component, pageProps }: AppProps) {
@@ -63,11 +71,15 @@ function App({ Component, pageProps }: AppProps) {
   ) 
 }
 
-// Use Connect button from Your component
+// Import ConnectButton from 'polconnect'
 
 import {ConnectButton} from 'polconnect'
 
 export default function Home() {
+  //  Use  ConnectButton in your component   it  takes 3 props 
+   // label: this  is the label of your button
+   // showChain : it takes boolean value   if you want to display the switch chain button  add a true value  otherwise add false
+   // backaground : this s the background of  the connectButtton
   return(
 <ConnectButton label='connect wallet' showChain={true} backGround='blue'   />
  )
@@ -76,7 +88,7 @@ export default function Home() {
 
 ## Documentation
 
-For full Documentation  Visit  [polconnect.xyz](polconnect.kabugu.xyz/)
+Learn more, from this technical tutorial.  [tutorial](https://abdulkabugu.hashnode.dev/how-to-achieve-seamless-wallet-integration-in-your-polkadot-dapps-with-polconnect)
 
 
 
