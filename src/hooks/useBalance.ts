@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { usePolkit } from '../providers/Provider'
 
 /**
- * Hook that returns the native token balance of the given `address`.
+ * Hook that returns the native token balance of the connected address
  */
 export const useBalance = (
   address?: string | AccountId,
