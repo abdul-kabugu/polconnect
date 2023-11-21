@@ -25,12 +25,17 @@ export default function ConnectButton({ backGround, label, showChain, chain} : B
         themeConfig,
         activeAccount,
         isDisconnectModal,
-        isSwitchChains
+        isSwitchChains,
+        activeSigner,
+        activeExtension
 
       } = usePolkit()
 
   const {balance, freeBalance, balanceFormatted} = useBalance(activeAccount?.address)
     
+    console.log("the active signer", activeSigner)
+    console.log("the active signer", activeAccount)
+    console.log("the active extension", activeExtension)
         const  getBackground = () => {
        if(backGround === "blue"){
         return "inline-flex cursor-pointer rounded-xl bg-gradient-to-r from-blue-400 to-blue-500 py-1.5 px-3 text-white text-lg hover:animate-scaleSlow duration-500 font-semibold"
