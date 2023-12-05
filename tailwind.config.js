@@ -19,10 +19,13 @@ module.exports = {
         xcardAnimation : "xcardAnimation 10s ease-in-out",
       cardsContainerAnimation: "cardsContainerAnimation 3s ease-in-out"
         },
+        fontFamily: {
+           "primary-font" : ['Inter']
+        },
         keyframes: {
           scaleSlow : {
              '0%': { transform: 'scale(1)' },   
-             '50%': { transform: 'scale(1.08)'}, 
+             '50%': { transform: 'scale(1.03)'}, 
             '100%': { transform: 'scale(1)' }, 
           },
           shakeAndMove: {

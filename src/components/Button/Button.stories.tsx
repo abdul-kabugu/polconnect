@@ -9,7 +9,13 @@ export default {
   component: ConnectButton,
   decorators : [
    (Story) => (
-    <PolkitProvider theme="dark" defaultChain={astar} appName="testing">
+    <PolkitProvider theme={{
+      size : "compact",
+      appearence : {
+        mode : "dark",
+      
+      }
+    }} defaultChain={astar} appName="testing">
        <Story  />
     </PolkitProvider>
    )

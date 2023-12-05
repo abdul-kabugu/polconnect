@@ -4,9 +4,12 @@ import { ApiPromise, HttpProvider, WsProvider } from '@polkadot/api'
 import { ApiOptions } from '@polkadot/api/types'
 import { SubstrateChain, getSubstrateChain } from '../chains'
 import { Signer } from '@polkadot/types/types'
+import { Core } from '@walletconnect/core'
+import { Web3Wallet } from '@walletconnect/web3wallet'
 import { accountArraysAreEqual, accountsAreEqual } from '../helpers/accountsAreEqual'
 accountArraysAreEqual
 import { InjectedAccount, InjectedExtension, Unsubcall } from '@polkadot/extension-inject/types'
+import UniversalProvider from '@walletconnect/universal-provider'
 import {
     SubstrateWallet,
     allSubstrateWallets,
@@ -16,6 +19,7 @@ import {
     nightly,
 } from '../wallets'
 import { initPolkadotJs } from '../helpers/initPolkadot'
+import { initWalletConnect } from '../helpers/initWalletConnect'
 
 /**
  * Helper Types
@@ -119,6 +123,10 @@ const [isConnecting, setIsConnecting] = useState<boolean>()
       setIsInitializing(false)
     }
   }
+
+   // initializze wallet connect
+
+
 
     
   // Updates account list and active account
@@ -316,6 +324,9 @@ const [isConnecting, setIsConnecting] = useState<boolean>()
   setisSwitchChains(!isSwitchChains)
 }
 
+  // handl wallet connect
+
+  
   const switchActiveChain = async (chain: SubstrateChain) => {
     const activeWallet = activeExtension && getSubstrateWallet(activeExtension.name)
     await switchNetwork(chain, activeWallet)

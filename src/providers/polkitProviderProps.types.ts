@@ -5,7 +5,16 @@ import { Signer } from '@polkadot/types/types'
 import { ApiPromise, HttpProvider, WsProvider } from '@polkadot/api'
 
 export interface providerProps  {
-   themeConfig: "light" | "dark",
+   themeConfig: {
+      appearence : {
+         mode ? : "light" | "dark",
+         modalTitle? : string
+         ModalTitleIcon? : string
+         WelcomeScreenTitle ? : string
+         WelcomeScreenSubtitle ? : string
+      }
+      size ? : "wide" | "compact"
+   } 
    defaultChain: SubstrateChain | SubstrateChain["network"],
    isSwitchChains : boolean, 
    handleSwitchChains : () => void;
@@ -32,4 +41,5 @@ export interface providerProps  {
    api? : ApiPromise
    isConnected? : boolean
    switchActiveChain? : (chain?: any) => void
+   handleWalletConnect ? : () => void
 }

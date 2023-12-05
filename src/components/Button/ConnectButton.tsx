@@ -50,7 +50,7 @@ export default function ConnectButton({ backGround, label, showChain, chain} : B
       const  getConnectState = () =>  {
         if(isConnected){
           return(
-           <ConnectedButton  showChain={showChain} balance={balanceFormatted} userAddress={activeAccount?.address} />
+           <h1>I'm connected</h1>
             
           )
         }else if(isInitializing){
