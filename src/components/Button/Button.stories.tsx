@@ -12,7 +12,7 @@ export default {
     <PolkitProvider theme={{
       size : "compact",
       appearence : {
-        mode : "dark",
+        mode : "light",
       
       }
     }} defaultChain={astar} appName="testing">
@@ -28,6 +28,7 @@ export const BlueBtn: StoryType = {
   args: {
     label: "Sign In",
     backGround : "blue",
+    showChain:true
   },
 };
 

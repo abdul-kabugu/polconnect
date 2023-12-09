@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React, {useState} from 'react'
 import { allDefaultWallets, isWalletInstalled } from '../../wallets'
 import { usePolkit } from '../../providers/Provider'

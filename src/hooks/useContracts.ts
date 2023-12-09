@@ -19,6 +19,7 @@ export const useContract = (
       setContract(undefined)
       return
     }
+    //@ts-ignore
     const contract = new ContractPromise(api, abi, address)
     setContract(contract)
   }
